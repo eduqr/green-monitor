@@ -1,0 +1,45 @@
+---
+import "@fontsource/hind";
+import HelloWord from "../components/HelloWord.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Visualizador web de temperatura, humedad y calidad del aire de plantas por medio de sensores conectados a un ESp32. Tecnología IoT."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="px-12 lg:px-24 flex lg:flex-row flex-col">
+    <HelloWord />
+    <slot />
+
+    <style is:global>
+      :root {
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-family:
+          "Hind" system-ui,
+          sans-serif;
+      }
+
+      body {
+        background: rgba(255, 255, 255, 1);
+      }
+    </style>
+  </body>
+</html>

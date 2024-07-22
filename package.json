@@ -12,6 +12,9 @@
   "dependencies": {
     "@astrojs/check": "^0.8.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/nunito": "^5.0.19",
+    "@fontsource/hind": "^5.0.13",
+    "@fontsource/junge": "^5.0.19",
     "astro": "^4.12.2",
     "tailwindcss": "^3.4.6",
     "typescript": "^5.5.3"
