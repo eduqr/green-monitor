@@ -3,6 +3,7 @@ import "@fontsource/hind";
 import "@fontsource/junge";
 import "@fontsource-variable/nunito";
 import Header from "../components/Header.astro";
+import PlantList from "../components/PlantList.astro";
 
 interface Props {
   title: string;
@@ -24,8 +25,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="px-12 lg:px-24 flex lg:flex-row flex-col">
+  <body class="">
     <Header />
+    <PlantList />
     <slot />
 
     <style is:global>
