@@ -3,6 +3,7 @@ import "@fontsource/hind";
 import "@fontsource/junge";
 import "@fontsource-variable/nunito";
 import Header from "../components/Header.astro";
+import PlantView from "../components/PlantView.astro";
 import PlantList from "../components/PlantList.astro";
 
 interface Props {
@@ -27,7 +28,8 @@ const { title } = Astro.props;
   </head>
   <body class="">
     <Header />
-    <PlantList />
+    <!-- <PlantList />
+    <PlantView /> -->
     <slot />
 
     <style is:global>
