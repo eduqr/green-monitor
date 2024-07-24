@@ -11,6 +11,14 @@ export default {
           allGood: "#E2FF6E",
           alert: "#FFED8C",
         },
+        bgHeader: {
+          default: "#E6FACB",
+        },
+      },
+      fontFamily: {
+        title: ["Junge", "sans-serif"],
+        subtitle: ["Nunito", "sans-serif"],
+        text: ["Hind", "sans-serif"],
       },
     },
   },
