@@ -4,15 +4,17 @@ import PlantCard from "./PlantCard.astro";
 
 <main class="p-6 bg-gray-100 min-h-screen">
   <section class="text-center mb-6">
-    <h1 class="text-3xl font-semibold">¡Buen día!</h1>
-    <p>Tus plantas han esperado por ti...</p>
-  </section>
-  <section class="text-center mb-6">
-    <div class="bg-green-100 rounded-md p-4 flex flex-col items-center">
-      <div class="text-3xl">😊</div>
-      <div class="mt-4">
-        <h2 class="text-xl font-semibold">¡Todo bien!</h2>
-        <p>Todos los niveles de tus plantas se encuentran óptimos.</p>
+    <div class="bg-bgCard-allGood rounded-md p-4 flex flex-col items-center">
+      <div class="text-3xl">😄</div>
+      <div>
+        <h2
+          class="text-xl md:text-2xl font-bold font-family-text text-white p-4"
+        >
+          ¡Todo bien!
+        </h2>
+        <p class="md:text-xl text-white font-family-text font-medium">
+          Todos los niveles de tus plantas se encuentran óptimos.
+        </p>
       </div>
     </div>
   </section>
@@ -21,8 +23,21 @@ import PlantCard from "./PlantCard.astro";
       <h2 class="text-2xl font-semibold">Mis plantas</h2>
     </div>
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
-      <PlantCard name="Floridelia" img="Floredia.jpg" />
-      <PlantCard name="Cactucin" img="Cactucin.jpg" />
+      <PlantCard
+        name="Floridelia"
+        img="Floredia.jpg"
+        alt="Fotografía de una Floredia con fondo gris"
+      />
+      <PlantCard
+        name="Cactucin"
+        img="Cactucin.jpg"
+        alt="Fotografía de un cactus con fondo gris"
+      />
+      <PlantCard
+        name="Cactucin"
+        img="Cactucin.jpg"
+        alt="Fotografía de un cactus con fondo gris"
+      />
     </div>
   </section>
 </main>

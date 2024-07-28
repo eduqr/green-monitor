@@ -8,8 +8,13 @@ export default {
         current: "currentColor",
         bgCard: {
           addPlant: "#C6F2ED",
-          allGood: "#E2FF6E",
+          allGood: "#56876D",
           alert: "#FFED8C",
+        },
+        textCard: {
+          addPlant: "#004E45",
+          allGood: "#3B5720",
+          alert: "#674708",
         },
         bgHeader: {
           default: "#E6FACB",
