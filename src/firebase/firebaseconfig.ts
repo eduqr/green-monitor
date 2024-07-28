@@ -22,7 +22,7 @@ function updateUI(data: []) {
 }
 
 export function initRealtimeData() {
-  const dataRef = ref(database, "aula1/luz");
+  const dataRef = ref(database, env.PUBLIC_FIREBASE_TEST_ROUTE);
   onValue(dataRef, (snapshot) => {
     const data = snapshot.val();
     updateUI(data);
