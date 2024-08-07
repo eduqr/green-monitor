@@ -4,7 +4,6 @@ import "@fontsource/junge";
 import "@fontsource-variable/nunito";
 import Header from "../components/Header.astro";
 import PlantView from "../components/PlantView.astro";
-import PlantList from "../components/PlantList.astro";
 
 interface Props {
   title: string;
@@ -26,9 +25,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="">
+  <body>
     <Header />
-    <PlantList />
+    <PlantView plantName="Erizo de mar" />
 
     <slot />
 

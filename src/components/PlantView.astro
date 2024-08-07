@@ -1,37 +1,57 @@
 ---
 const { plantName } = Astro.props;
 ---
+
 <main class="text-center p-6 bg-gray-100 min-h-screen">
-    <section class="plant-view">
-        <div class="mb-6">
-            <img src="plant.png" alt="Planta" class="w-24 h-24 object-cover mx-auto mb-4">
-            <h1 class="text-3xl font-semibold">{plantName}</h1>
-        </div>
-        <div class="bg-yellow-100 rounded-md p-4 mb-6">
-            <p>Conecta el <strong>Green Sensor</strong> a tu planta para ver su estado</p>
-        </div>
-        <div class="grid grid-cols-2 gap-4 mb-6 md:grid-cols-4">
-            <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center">
-                <p class="text-xl">°C</p>
-                <p class="text-sm">Temperatura</p>
-                <p class="text-2xl mt-2">-</p>
-            </div>
-            <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center">
-                <p class="text-xl">CVA</p>
-                <p class="text-sm">Humedad tierra</p>
-                <p class="text-2xl mt-2">-</p>
-            </div>
-            <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center">
-                <p class="text-xl">%</p>
-                <p class="text-sm">Humedad aire</p>
-                <p class="text-2xl mt-2">-</p>
-            </div>
-            <div class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center">
-                <p class="text-xl">PPM</p>
-                <p class="text-sm">Calidad del aire</p>
-                <p class="text-2xl mt-2">-</p>
-            </div>
-        </div>
-        <button class="bg-red-500 text-white py-2 px-4 rounded-md">Eliminar planta</button>
-    </section>
+  <section class="plant-view">
+    <div class="mb-6 md:m-6">
+      <img
+        src="Floredia.jpg"
+        alt="Fotografía de una sedum lineare"
+        class="size-24 rounded object-fill mx-auto mb-4"
+      />
+      <h1 class="text-3xl font-semibold">{plantName}</h1>
+    </div>
+    <!-- <div class="bg-yellow-100 rounded-md p-4 mb-6">
+      <p>
+        Conecta el <strong>Green Sensor</strong> a tu planta para ver su estado
+      </p>
+    </div> -->
+    <h2 class="text-2xl font-semibold mt-8 md:mt-12 mb-4 text-left">
+      Estado actual
+    </h2>
+    <div class="grid grid-cols-2 gap-4 mb-6 md:grid-cols-4">
+      <div
+        class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center"
+      >
+        <p class="text-2xl mt-2">-</p>
+        <p class="text-xl">°C</p>
+        <p class="text-sm">Temperatura</p>
+      </div>
+      <div
+        class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center"
+      >
+        <p class="text-2xl mt-2">-</p>
+        <p class="text-xl">%</p>
+        <p class="text-sm">Humedad tierra</p>
+      </div>
+      <div
+        class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center"
+      >
+        <p class="text-2xl mt-2">-</p>
+        <p class="text-xl">%</p>
+        <p class="text-sm">Humedad aire</p>
+      </div>
+      <div
+        class="bg-gray-100 border border-gray-300 rounded-lg p-4 text-center"
+      >
+        <p class="text-2xl mt-2">-</p>
+        <p class="text-xl">PPM</p>
+        <p class="text-sm">Calidad del aire</p>
+      </div>
+    </div>
+    <h2 class="text-2xl font-semibold mt-16 mb-8 text-left">
+      Gráficas en tiempo real
+    </h2>
+  </section>
 </main>
