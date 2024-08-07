@@ -15,7 +15,9 @@
     "@fontsource-variable/nunito": "^5.0.19",
     "@fontsource/hind": "^5.0.13",
     "@fontsource/junge": "^5.0.19",
+    "@types/chart.js": "^2.9.41",
     "astro": "^4.12.2",
+    "chart.js": "^4.4.3",
     "firebase": "^10.12.4",
     "tailwindcss": "^3.4.6",
     "typescript": "^5.5.3"
